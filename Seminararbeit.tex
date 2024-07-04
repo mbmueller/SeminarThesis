@@ -1,0 +1,154 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.21 of 2022/01/12
+%
+\documentclass[runningheads]{llncs}
+%
+\usepackage[T1]{fontenc}
+% T1 fonts will be used to generate the final print and online PDFs,
+% so please use T1 fonts in your manuscript whenever possible.
+% Other font encondings may result in incorrect characters.
+%
+\usepackage{graphicx}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following two lines
+% to display URLs in blue roman font according to Springer's eBook style:
+%\usepackage{color}
+%\renewcommand\UrlFont{\color{blue}\rmfamily}
+%\urlstyle{rm}
+%
+
+\usepackage[sectionbib,numbers,sort&compress]{natbib}
+\bibliographystyle{splncs04nat}
+
+\begin{document}
+%
+\title{Usage of process mining for security in Process-Aware Information Systems}
+%
+\titlerunning{Process Mining for security in PAIS}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{Marlon Müller\inst{1}}
+%
+\authorrunning{M. Müller}
+% First names are abbreviated in the running head.
+% If there are more than two authors, 'et al.' is used.
+%
+\institute{
+Technical University of Munich, Munich, Germany\\
+\email{marlonbenedikt.mueller@tum.de}}
+%
+\maketitle              % typeset the header of the contribution
+%
+\begin{abstract}
+The abstract should briefly summarize the contents of the paper in
+150--250 words.
+
+\keywords{Process Mining \and Security \and Process-Aware Information Systems \and Systematic literature review.}
+\end{abstract}
+%
+%
+%
+\section{Introduction}\label{Introduction}
+In 2018 76\% of businesses in Germany saw a significant risk for their business processes coming from cyberattacks on their information systems~\cite{Bsi} and in 2023 companies in the 
+United States reported total damages of 37.5 billion US-Dollars due to cybercrime~\cite{fbi}. This shows the need for companies to protect their business processes from cyberattacks.\\
+Therefore over the last years the research in security for Process-Aware Information Systems (PAIS) has increased and has produced a vast amount of research papers. The survey~\cite{Leitner2014273}
+conducted a systematic literature review on security in PAIS and identified Process-Mining as an emerging technology that can be used to improve security in PAIS and predicted that
+the usage of Process Mining for security purposes in PAIS will be a focus of future research.\\
+In 2018, already 65\% of German businesses investigated log-files to identify security incidents based on the suspicion of a security incident and 33\% use log-files to systematically
+identify security incidents without concrete suspicions~\cite{Bsi}.\\
+Therefore Process Mining has the potential to be further enhanced to be used for security in Process-Aware Information Systems and was further researched in the last years. This paper
+aims to update the survey~\cite{Leitner2014273} in the field of Process Mining and to provide an overview over the recent advances in the usage of Process Mining for security purposes in PAIS since 2012. For this goal we will conduct a systematic literature
+review to outline the possible applications of Process Mining for security in PAIS.\\
+\\
+To approach this goal we targeted the following research questions:
+\begin{enumerate}
+    \item How does Process Mining contribute to security in PAIS\@?
+    \item Have the research challenges defined in~\cite{Leitner2014273} been addressed by recent research? 
+\end{enumerate}
+
+In Section~\ref{Fundamentals} we will first provide some defintions and explanaitions over the terms used in this paper and evaluate the current state of the art. 
+Section~\ref{Related} evaluates other related works in this field and how this paper adds further contribution to current research.
+Section~\ref{Methodology} outlines the different steps of the literature review consisting of literature search, literature selection, data extraction and the classification of security goals and security concepts.
+The results of the literature review are described in Section~\ref{Results} and in Section~\ref{Conclusion} the results are discussed and the paper is concluded.
+
+\section{Fundamentals}\label{Fundamentals}
+In the following definitons for the most relevant terms in this paper are provided and the current state of the art is evaluated.
+\subsection{Process Mining}\label{Process Mining}
+\cite{vanderAalst2016}
+\subsection{Information Security}\label{Security}
+\cite{Eckert}
+\subsection{Process-Aware Information Systems}\label{PAIS}
+\subsection{State of the Art}\label{State of the Art}
+The main objective of this paper is to update the systematic literature review conducted in~\cite{Leitner2014273} regarding the Process Mining security control and to provide an overview over the recent advances
+in the usage of Process Mining for security purposes in PAIS until 2012. 
+\subsubsection{Summary of the survey}\label{Summary}
+In that survey the authors identified Process Mining as an emerging technology and gave a brief overview
+over the security related research regarding Process Mining in PAIS\@. The authors assigned Process Mining to the action type Detection and placed it in the Change phase of the
+process lifecycle.\\
+In this survey the authors assigned Process Mining the action type Detection and placed it in the Change phase of the process lifecycle. They identified that the main usage of 
+Process Mining for security purposes in PAIS is to examine the conformance of the process model with the actual process execution that could be derived from the event logs.
+The derived model from the event logs can be used to detect inconsitencies and anomalious behaviour that could be an indicator for security incidents like fraud or intrusions.
+Another use case the authors identified is to use event logs to validate the conformity of the process execution with the security policies of the company, like 
+Role-Based Access Control (RBAC) models or data flow
+policies. It was concluded, that Process Mining can be used to capture relevant information on data, ressources and task execution to find or address security issues and compliance
+violations and their root causes.\\ 
+\subsubsection{Research Challenges identified}\label{Challenges}
+For security in PAIS in general (and not only regarding Process Mining) the authors identified the following research challenges:
+\begin{enumerate}
+    \item Agreement on Terminology and Controls
+    \item Consistency with Related Fields and Concepts
+    \item Measurement
+    \item Testing
+    \item Evaluation
+    \item Detection Controls
+    \item Reaction Controls
+    \item Human Orientation
+\end{enumerate}
+\paragraph{Agreement on Terminology and Controls} The authors identified that the terminology used in the field of security in PAIS is not consistent and in some research no 
+defintion of security or the protected security goals are provided.
+\paragraph{Consistency with Related Fields and Concepts} Even though research in security in PAIS is an interdisciplinary field, it was identified that except for the NIST standard for
+RBAC no standards or recoommendations are considered in the research.
+\paragraph{Measurement} The authors could not identify any methods or metrics are used to evaluate the effectiveness of the security controls in PAIS, while in other security areas 
+well developed standards, e.g.\ the ISO/IEC 27004 standard, exist.
+\paragraph{Testing} Most of the security concepts in PAIS research are theoretical models and no method to test these models is provided.
+\paragraph{Evaluation} In the examined research the evaluation of the security in PAIS centers on post-ex evaluation using Process Mining techniques and the authors stated that It
+should be considered how to evaluate the security in PAIS at design or run time.
+\paragraph{Detection Controls} Invastigations of possible security incidents does not happen at run time but the authors identified that it could be benficial to detect anomalies
+at run time to then be able to react to them.
+\paragraph{Reaction Controls} So far, reaction controls are focused on failure handling such as exception handling or process recovery. The authors identified that it could be beneficial
+to react to identified security problems at design time.
+\paragraph{Human Orientation} Human factors are not considered in the research instead it only focuses on the technological aspects of security in PAIS\@. The authors stressed that
+humans are an important factor in business processes and that they also could be a security risk if they are psychologically manipulated during Social Engineering attacks. 
+
+\section{Related Work}\label{Related}
+As already stated above, this paper aims to update the systematic literature review conducted in~\cite{Leitner2014273} and is therfore based on the results of that survey as described
+in Section~\ref{State of the Art}.\\
+The surveys~\cite{Kelemen_2018} and~\cite{Silalahi20221} already conducted systematic literature reviews on the usage of Process Mining in security applications.
+
+
+\section{Methodology}\label{Methodology}
+
+\section{Results}\label{Results}
+\subsection{How does Process Mining contribute to security in PAIS?}\label{Q1}
+\subsubsection{Security goals}\label{goals}
+\subsubsection{Security concepts}\label{concepts}
+\subsection{Have the research challenges been addressed by recent research?}\label{Q2}
+
+\section{Discussion and Conclusion}\label{Conclusion}
+
+%
+% ---- Bibliography ----
+%
+% BibTeX users should specify bibliography style 'splncs04'.
+% References will then be sorted and formatted in the correct style.
+%
+% \bibliographystyle{splncs04}
+% \bibliography{mybibliography}
+%
+%\bibliographystyle{splncs04}
+\bibliography{Seminararbeit}{}
+\end{document}
