@@ -44,7 +44,10 @@ Technical University of Munich, Munich, Germany\\
 \maketitle              % typeset the header of the contribution
 %
 \begin{abstract}
-WHY
+Security in Process-Aware Information System (PAIS) is critical for almost every organisation and company, as a lack of security measures leads to vulnerabilities that can, if abused, cause severe fincancial damage.
+The survey~\cite{Leitner2014273} by Leitner and Rinderle-Ma from 2013 analysed in a systematic literature review the researched security controls in PAIS\@. The authors identified that the usage
+of Process Mining may be an emerging topic, so this paper provides a systematic literature review to analyze the advances in Process Mining research for security in PAIS and clusters the results
+by the security goals that are protected as well as the Process Mining applications and concpets that can be used for security in PAIS\@. 
 
 \keywords{Process Mining \and Security \and Process-Aware Information Systems \and Systematic literature review.}
 \end{abstract}
@@ -52,7 +55,8 @@ WHY
 %
 %
 \section{Introduction}\label{Introduction}
-In 2018 76\% of businesses in Germany saw a significant risk for their business processes coming from cyberattacks on their information systems~\cite{Bsi} and in 2023 companies in the 
+In 2018 76\% of businesses in Germany saw a significant risk for their business processes coming from cyberattacks on their information systems~\cite{Bsi} and in a report by the
+Federal Bureau of Investigation from 2023 companies in the 
 United States reported total damages of 37.5 billion US-Dollars due to cybercrime~\cite{fbi}. This shows the need for companies to protect their business processes from cyberattacks.\\
 Therefore over the last years the research in security for Process-Aware Information Systems (PAIS) has increased and has produced a vast amount of research papers. The survey~\cite{Leitner2014273}
 conducted a systematic literature review on security in PAIS and identified Process-Mining as an emerging technology that can be used to improve security in PAIS and predicted that
@@ -60,28 +64,50 @@ the usage of Process Mining for security purposes in PAIS will be a focus of fut
 In 2018, already 65\% of German businesses investigated log-files to identify security incidents based on the suspicion of a security incident and 33\% use log-files to systematically
 identify security incidents without concrete suspicions~\cite{Bsi}.\\
 Therefore Process Mining has the potential to be further enhanced to be used for security in Process-Aware Information Systems and was further researched in the last years. This paper
-aims to update the survey~\cite{Leitner2014273} in the field of Process Mining and to provide an overview over the recent advances in the usage of Process Mining for security purposes in PAIS since 2012. For this goal we will conduct a systematic literature
+aims to update the survey by Leitner and Rinderle-Ma~\cite{Leitner2014273} in the field of Process Mining and to provide an overview over the recent advances in the usage of Process Mining for security purposes in PAIS since 2012. For this goal we will conduct a systematic literature
 review to outline the possible applications of Process Mining for security in PAIS.\\
 \\
-To approach this goal we targeted the following research questions:
+To approach this goal the following research questions were targeted:
 \begin{enumerate}
     \item How does Process Mining contribute to security in PAIS\@?
     \item Have the research challenges defined in~\cite{Leitner2014273} been addressed by recent research? 
 \end{enumerate}
 
-In Section~\ref{Fundamentals} we will first provide some defintions and explanaitions over the terms used in this paper and evaluate the current state of the art. 
-Section~\ref{Related} evaluates other related works in this field and how this paper adds further contribution to current research.
+In Section~\ref{Fundamentals} we will first provide some defintions and explanaitions over the terms used in this paper. 
+Section~\ref{Related} evaluates related works in this field and how this paper adds further contribution to current research.
 Section~\ref{Methodology} outlines the different steps of the literature review consisting of literature search, literature selection, data extraction and the classification of security goals and security concepts.
 The results of the literature review are described in Section~\ref{Results} and in Section~\ref{Conclusion} the results are discussed and the paper is concluded.
 
 \section{Fundamentals}\label{Fundamentals}
-In this section definitons for the most relevant terms in this paper are provided and the current state of the art is evaluated.
+Below definitons for the most relevant terms in this paper are provided.
 \subsection{Process Mining}\label{Process Mining}
 \cite{vanderAalst2016}
 \subsection{Information Security}\label{Security}
-\cite{Eckert}
+TODO: IS definiton
+\subsubsection{Security Goals}\label{goals_def}
+Later in this paper the results will be clustered according to the security goals that are protected by the applications proposed by the reviewed papers (Section~\ref{Methodology} and~\ref{goals}). 
+The clusters are chosen based on the security goals as described by Eckert in~\cite{Eckert}. While the CIA-Properties (Confidentiality, Integrity, Availabilty) are commonly agreed on as the 
+primary security goals the other security goals (especially Privacy and Accountability) are acknowledged as valid security goals but their relevance to different use cases is discussed and 
+not commonly agreed on. %Hier evtl andere Literatur noch nennen.
+Nonetheless this six security to goals according to~\cite{Eckert} are chosen because clustering only by the CIA-Properties would not reflect the whole bandwith of security research in Process Mining
+for PAIS while still allowing clear distinctions between them.
+\paragraph{Confidentiality}
+\paragraph{Integrity}
+\paragraph{Availabilty}
+\paragraph{Accountability}
+\paragraph{Privacy}
+\paragraph{Authenticity}
 \subsection{Process-Aware Information Systems}\label{PAIS}
-\subsection{State of the Art}\label{State of the Art}
+The term Process-Aware Information Systems is definded by Dumas et al.~\cite{Dumas20051} by combining the definitions of Information Systems (as PAIS are a special kind of Information Systems)
+and business processes. Their understanding of a business process is a ``way for an organizational entity to organize work and resources (\ldots) to accomplish its aims''. On that foundation
+PAIS are defined as ``a software system that manages and executes operational processes involving people, applications, and/or information sources on the basis of process models''.
+Additionally to the formal defintion they marked that these process models are often represented using visual languages, like Petri-Net notations.\\
+The main difference between a PAIS and a task-driven Information System (e.g.\ text editor or e-mail client) is described as the fact that task-driven applications are unaware of the process
+they are used in and therefore can neither support nor restrict the user in the process execution.
+\section{Related Work}\label{Related}
+In this section the survey by Leitner and Rinderle-Ma~\cite{Leitner2014273}, that this paper aims to update, is briefly summarized and other related works are presented and explained how
+this paper adds further contribution to the research in Process Mining for security in PAIS.\\
+\subsection{Survey by Leitner and Rinderle-Ma from 2013}\label{basepaper}
 The main objective of this paper is to update the systematic literature review conducted in~\cite{Leitner2014273} regarding the Process Mining security control and to provide an overview over the recent advances
 in the usage of Process Mining for security purposes in PAIS until 2012. 
 \subsubsection{Summary of the survey}\label{Summary}
@@ -122,11 +148,8 @@ at run time to then be able to react to them.
 to react to identified security problems at design time.
 \paragraph{Human Orientation} Human factors are not considered in the research instead it only focuses on the technological aspects of security in PAIS\@. The authors stressed that
 humans are an important factor in business processes and that they also could be a security risk if they are psychologically manipulated during Social Engineering attacks. 
-
-\section{Related Work}\label{Related}
-As already stated above, this paper aims to update the systematic literature review conducted in~\cite{Leitner2014273} and is therfore based on the results of that survey as described
-in Section~\ref{State of the Art}.\\
-The surveys~\cite{Kelemen_2018} and~\cite{Silalahi20221} already conducted systematic literature reviews on the usage of Process Mining in security applications.
+\subsection{Other Systematic Literature Reviews}\label{Other}
+The surveys~\cite{Kelemen_2018} and~\cite{Silalahi20221} also conducted systematic literature reviews on the usage of Process Mining in security applications.
 
 
 \section{Methodology}\label{Methodology}
