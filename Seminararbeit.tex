@@ -90,13 +90,22 @@ The clusters are chosen based on the security goals as described by Eckert in~\c
 primary security goals the other security goals (especially Privacy and Accountability) are acknowledged as valid security goals but their relevance to different use cases is discussed and 
 not commonly agreed on. %Hier evtl andere Literatur noch nennen.
 Nonetheless this six security to goals according to~\cite{Eckert} are chosen because clustering only by the CIA-Properties would not reflect the whole bandwith of security research in Process Mining
-for PAIS while still allowing clear distinctions between them.
-\paragraph{Confidentiality}
-\paragraph{Integrity}
-\paragraph{Availabilty}
-\paragraph{Accountability}
-\paragraph{Privacy}
-\paragraph{Authenticity}
+for PAIS while still allowing clear distinctions between them. The following definitions of the different security goals are taken from~\cite{Eckert}.
+\paragraph{Confidentiality} Confidentiality to protect information from being disclosed to unauthorized entities. This includes the encryption of data as well as models to restrict the flow of 
+information according to an organisations policies.
+\paragraph{Integrity} A system is considered to have integrity if it provides protection against unauthorized and unnoticed manipulation of data or processes. To guarantee integrity
+Access Control mechanisms are used to ensure that only authorized entities with the proper Access Rights can modify data or processes under certain constraints (e.g.\ limit the amount of money
+a user can withdraw from an account). In systems where manipulations can not be avoided (e.g.\ in network communication) cryptographic hashing should be used to detect manipulations and 
+avoid further damages.
+\paragraph{Availabilty} Availability is the property of a system to be accessible and usable by autorized entities without unauthorized delays or restrictions. Delays that are a result of the
+normal operation of a system (e.g.\ concurrency over shared resources) are considered as authorized delays and therefore do not violate the property of availability.
+\paragraph{Accountability} The property of accountability (sometimes referred to as non-repudiation) is to ensure that an entity can not deny the actions it has taken. Accountability is
+important for Electronic Commerce to be able to prove in lawsuit that a contract has been signed by a certain entity or that a contract has been fulfilled.
+\paragraph{Privacy} The ability of individuals to control the collection, use and disclosure of their personal information and obliges organisations to protect the data of 
+identified or identifiable individuals. Privacy is considered a human right~\cite{EU} and is therfore often regulated by laws like the General Data Protection Regulation (GDPR) in the European Union.
+\paragraph{Authenticity} Authenticity is the valiation of the identity of an acting entity using unique identifiers or characteristics, such as cryptographic keys or biometric data. 
+The act of verifying the identity of an entity is called authentication, that happens typically using user accounts with a distinct username and a secret password and/or biometric factors. 
+The data that is used to verify the identity (e.g.\ the password) is called credentials to provide an abstraction of the concrete authentication method used.
 \subsection{Process-Aware Information Systems}\label{PAIS}
 The term Process-Aware Information Systems is definded by Dumas et al.~\cite{Dumas20051} by combining the definitions of Information Systems (as PAIS are a special kind of Information Systems)
 and business processes. Their understanding of a business process is a ``way for an organizational entity to organize work and resources (\ldots) to accomplish its aims''. On that foundation
