@@ -42,25 +42,25 @@
 % If there are more than two authors, 'et al.' is used.
 %
 \institute{
-Technical University of Munich, Munich, Germany\\
-\email{marlonbenedikt.mueller@tum.de}}
+    Technical University of Munich, Munich, Germany\\
+    \email{marlonbenedikt.mueller@tum.de}}
 %
 \maketitle              % typeset the header of the contribution
 %
 \begin{abstract}
-Security in Process-Aware Information System (PAIS) is critical for almost every organisation and company, as a lack of security measures leads to vulnerabilities that can, if abused, cause severe fincancial damage.
-The survey~\cite{Leitner2014273} by Leitner and Rinderle-Ma from 2013 analysed in a systematic literature review the researched security controls in PAIS\@. The authors identified that the usage
-of Process Mining may be an emerging topic, so this paper provides a systematic literature review to analyze the advances in Process Mining research for security in PAIS and clusters the results
-by the security goals that are protected as well as the Process Mining applications and concpets that can be used for security in PAIS\@. 
+    Security in Process-Aware Information System (PAIS) is critical for almost every organisation and company, as a lack of security measures leads to vulnerabilities that can, if abused, cause severe fincancial damage.
+    The survey~\cite{Leitner2014273} by Leitner and Rinderle-Ma from 2013 analysed in a systematic literature review the researched security controls in PAIS\@. The authors identified that the usage
+    of Process Mining may be an emerging topic, so this paper provides a systematic literature review to analyze the advances in Process Mining research for security in PAIS and clusters the results
+    by the security goals that are protected as well as the Process Mining applications and concpets that can be used for security in PAIS\@.
 
-\keywords{Process Mining \and Security \and Process-Aware Information Systems \and Systematic literature review.}
+    \keywords{Process Mining \and Security \and Process-Aware Information Systems \and Systematic literature review.}
 \end{abstract}
 %
 %
 %
 \section{Introduction}\label{Introduction}
 In 2018 76\% of businesses in Germany saw a significant risk for their business processes coming from cyberattacks on their information systems~\cite{Bsi} and in a report by the
-Federal Bureau of Investigation from 2023 companies in the 
+Federal Bureau of Investigation from 2023 companies in the
 United States reported total damages of 37.5 billion US-Dollars due to cybercrime~\cite{fbi}. This shows the need for companies to protect their business processes from cyberattacks.\\
 Therefore over the last years the research in security for Process-Aware Information Systems (PAIS) has increased and has produced a vast amount of research papers. The survey~\cite{Leitner2014273}
 conducted a systematic literature review on security in PAIS and identified Process-Mining as an emerging technology that can be used to improve security in PAIS and predicted that
@@ -74,10 +74,10 @@ review to outline the possible applications of Process Mining for security in PA
 To approach this goal the following research questions were targeted:
 \begin{enumerate}
     \item How does Process Mining contribute to security in PAIS\@?
-    \item Have the research challenges defined in~\cite{Leitner2014273} been addressed by recent research? 
+    \item Have the research challenges defined in~\cite{Leitner2014273} been addressed by recent research?
 \end{enumerate}
 
-In Section~\ref{Fundamentals} we will first provide some defintions and explanaitions over the terms used in this paper. 
+In Section~\ref{Fundamentals} we will first provide some defintions and explanaitions over the terms used in this paper.
 Section~\ref{Related} evaluates related works in this field and how this paper adds further contribution to current research.
 Section~\ref{Methodology} outlines the different steps of the literature review consisting of literature search, literature selection, data extraction and the classification of security goals and security concepts.
 The results of the literature review are described in Section~\ref{Results} and in Section~\ref{Conclusion} the results are discussed and the paper is concluded.
@@ -95,32 +95,32 @@ Process Mining can be used for
 \end{itemize}
 
 \subsection{Information Security}\label{Security}
-Security in Information Systems (also called Information Security) is defined by the International Organization for Standardization (ISO) as the protection of 
+Security in Information Systems (also called Information Security) is defined by the International Organization for Standardization (ISO) as the protection of
 Confidentiality, Integrity and Availabilty of information~\cite{ISO}. This definition is also known as the CIA-Properties, but can be extended by other security goals as defined below. In other
 literature the term Information Security describes the protection of systems to enter a state that allows unauthorized access to information or resources. This means, that security involves an
 unauthorized entity (the attacker). Security can differentiated from safety by the fact that safety describes the ability of a system to be prone to software or hardware failures from within
 the system itself without the influence of an attacker.\cite{Eckert}\\
 \subsubsection{Security Goals}\label{goals_def}
-Later in this paper the results will be clustered according to the security goals that are protected by the applications proposed by the reviewed papers (Section~\ref{Methodology} and~\ref{goals}). 
-The clusters are chosen based on the security goals as described by Eckert in~\cite{Eckert}. While the CIA-Properties (Confidentiality, Integrity, Availabilty) are commonly agreed on as the 
-primary security goals the other security goals (especially Privacy and Accountability) are acknowledged as valid security goals but their relevance to different use cases is discussed and 
+Later in this paper the results will be clustered according to the security goals that are protected by the applications proposed by the reviewed papers (Section~\ref{Methodology} and~\ref{goals}).
+The clusters are chosen based on the security goals as described by Eckert in~\cite{Eckert}. While the CIA-Properties (Confidentiality, Integrity, Availabilty) are commonly agreed on as the
+primary security goals the other security goals (especially Privacy and Accountability) are acknowledged as valid security goals but their relevance to different use cases is discussed and
 not commonly agreed on. %Hier evtl andere Literatur noch nennen.
 Nonetheless this six security to goals according to~\cite{Eckert} are chosen because clustering only by the CIA-Properties would not reflect the whole bandwith of security research in Process Mining
 for PAIS while still allowing clear distinctions between them. The following definitions of the different security goals are taken from~\cite{Eckert}.
-\paragraph{Confidentiality} Confidentiality to protect information from being disclosed to unauthorized entities. This includes the encryption of data as well as models to restrict the flow of 
+\paragraph{Confidentiality} Confidentiality to protect information from being disclosed to unauthorized entities. This includes the encryption of data as well as models to restrict the flow of
 information according to an organisations policies.
 \paragraph{Integrity} A system is considered to have integrity if it provides protection against unauthorized and unnoticed manipulation of data or processes. To guarantee integrity
 Access Control mechanisms are used to ensure that only authorized entities with the proper Access Rights can modify data or processes under certain constraints (e.g.\ limit the amount of money
-a user can withdraw from an account). In systems where manipulations can not be avoided (e.g.\ in network communication) cryptographic hashing should be used to detect manipulations and 
+a user can withdraw from an account). In systems where manipulations can not be avoided (e.g.\ in network communication) cryptographic hashing should be used to detect manipulations and
 avoid further damages.
 \paragraph{Availabilty} Availability is the property of a system to be accessible and usable by autorized entities without unauthorized delays or restrictions. Delays that are a result of the
 normal operation of a system (e.g.\ concurrency over shared resources) are considered as authorized delays and therefore do not violate the property of availability.
 \paragraph{Accountability} The property of accountability (sometimes referred to as non-repudiation) is to ensure that an entity can not deny the actions it has taken. Accountability is
 important for Electronic Commerce to be able to prove in lawsuit that a contract has been signed by a certain entity or that a contract has been fulfilled.
-\paragraph{Privacy} The ability of individuals to control the collection, use and disclosure of their personal information is called Privacy and obliges organisations to protect the data of 
+\paragraph{Privacy} The ability of individuals to control the collection, use and disclosure of their personal information is called Privacy and obliges organisations to protect the data of
 identified or identifiable individuals. Privacy is considered a human right~\cite{EU} and is therfore often regulated by laws like the General Data Protection Regulation (GDPR) in the European Union.
-\paragraph{Authenticity} Authenticity is the valiation of the identity of an acting entity using unique identifiers or characteristics, such as cryptographic keys or biometric data. 
-The act of verifying the identity of an entity is called authentication, that happens typically using user accounts with a distinct username and a secret password and/or biometric factors. 
+\paragraph{Authenticity} Authenticity is the valiation of the identity of an acting entity using unique identifiers or characteristics, such as cryptographic keys or biometric data.
+The act of verifying the identity of an entity is called authentication, that happens typically using user accounts with a distinct username and a secret password and/or biometric factors.
 The data that is used to verify the identity (e.g.\ the password) is called credentials to provide an abstraction of the concrete authentication method used.
 \subsection{Process-Aware Information Systems}\label{PAIS}
 The term Process-Aware Information Systems is definded by Dumas et al.~\cite{Dumas20051} by combining the definitions of Information Systems (as PAIS are a special kind of Information Systems)
@@ -134,18 +134,18 @@ In this section the survey by Leitner and Rinderle-Ma~\cite{Leitner2014273}, tha
 this paper adds further contribution to the research in Process Mining for security in PAIS.\\
 \subsection{Survey by Leitner and Rinderle-Ma from 2013}\label{basepaper}
 The main objective of this paper is to update the systematic literature review conducted in~\cite{Leitner2014273} regarding the Process Mining security control and to provide an overview over the recent advances
-in the usage of Process Mining for security purposes in PAIS until 2012. 
+in the usage of Process Mining for security purposes in PAIS until 2012.
 \subsubsection{Summary of the survey}\label{Summary}
 In that survey the authors identified Process Mining as an emerging technology and gave a brief overview
 over the security related research regarding Process Mining in PAIS\@. The authors assigned Process Mining to the action type Detection and placed it in the Change phase of the
 process lifecycle.\\
-In this survey the authors assigned Process Mining the action type Detection and placed it in the Change phase of the process lifecycle. They identified that the main usage of 
+In this survey the authors assigned Process Mining the action type Detection and placed it in the Change phase of the process lifecycle. They identified that the main usage of
 Process Mining for security purposes in PAIS is to examine the conformance of the process model with the actual process execution that could be derived from the event logs.
 The derived model from the event logs can be used to detect inconsitencies and anomalious behaviour that could be an indicator for security incidents like fraud or intrusions.
-Another use case the authors identified is to use event logs to validate the conformity of the process execution with the security policies of the company, like 
+Another use case the authors identified is to use event logs to validate the conformity of the process execution with the security policies of the company, like
 Role-Based Access Control (RBAC) models or data flow
 policies. It was concluded, that Process Mining can be used to capture relevant information on data, ressources and task execution to find or address security issues and compliance
-violations and their root causes.\\ 
+violations and their root causes.\\
 \subsubsection{Research Challenges identified}\label{Challenges}
 For security in PAIS in general (and not only regarding Process Mining) the authors identified the following research challenges:
 \begin{enumerate}
@@ -158,11 +158,11 @@ For security in PAIS in general (and not only regarding Process Mining) the auth
     \item Reaction Controls
     \item Human Orientation
 \end{enumerate}
-\paragraph{Agreement on Terminology and Controls} The authors identified that the terminology used in the field of security in PAIS is not consistent and in some research no 
+\paragraph{Agreement on Terminology and Controls} The authors identified that the terminology used in the field of security in PAIS is not consistent and in some research no
 defintion of security or the protected security goals are provided.
 \paragraph{Consistency with Related Fields and Concepts} Even though research in security in PAIS is an interdisciplinary field, it was identified that except for the NIST standard for
 RBAC no standards or recoommendations are considered in the research.
-\paragraph{Measurement} The authors could not identify any methods or metrics are used to evaluate the effectiveness of the security controls in PAIS, while in other security areas 
+\paragraph{Measurement} The authors could not identify any methods or metrics are used to evaluate the effectiveness of the security controls in PAIS, while in other security areas
 well developed standards, e.g.\ the ISO/IEC 27004 standard, exist.
 \paragraph{Testing} Most of the security concepts in PAIS research are theoretical models and no method to test these models is provided.
 \paragraph{Evaluation} In the examined research the evaluation of the security in PAIS centers on post-ex evaluation using Process Mining techniques and the authors stated that It
@@ -172,28 +172,28 @@ at run time to then be able to react to them.
 \paragraph{Reaction Controls} So far, reaction controls are focused on failure handling such as exception handling or process recovery. The authors identified that it could be beneficial
 to react to identified security problems at design time.
 \paragraph{Human Orientation} Human factors are not considered in the research instead it only focuses on the technological aspects of security in PAIS\@. The authors stressed that
-humans are an important factor in business processes and that they also could be a security risk if they are psychologically manipulated during Social Engineering attacks. 
+humans are an important factor in business processes and that they also could be a security risk if they are psychologically manipulated during Social Engineering attacks.
 \subsection{Other Systematic Literature Reviews}\label{Other}
 The surveys~\cite{Kelemen_2018} and~\cite{Silalahi20221} also conducted systematic literature reviews on the usage of Process Mining in security applications. The systematic literature review
 by Kelemen focused on the topics covered and the main challenges in Process Mining in the security domain~\cite{Kelemen_2018}, while the survey by Silalahi et al.\ identified the datasets,
 methods, tools and frameworks used in Process Mining research~\cite{Silalahi20221}. Both surveys gave a broad overview over the research in Process Mining for security applications but did not
 focus on security in PAIS\@.\\
-This paper provides further contribution as it gives a more in depth analysis over the usage of Process Mining for security in PAIS\@. It also gives a unique classification of the research by 
+This paper provides further contribution as it gives a more in depth analysis over the usage of Process Mining for security in PAIS\@. It also gives a unique classification of the research by
 identifying the security goals that are protected. As this paper narrowing down the specific research field it takes a broader and more up-to-date time frame into consideration as~\cite{Silalahi20221} only reviewed
 papers between 2017 and 2021 and~\cite{Kelemen_2018} reviewed papers between 2000 and 2016.
 \section{Methodology}\label{Methodology}
-The systematic literature review conducted in this paper follows the guidelines outlined in~\cite{BRERETON2007571} and is also based on the methodology used in the systematic literature review by Leitner and Rinderle-Ma~\cite{Leitner2014273}. 
-At first a clear definition of the research questions is given before in the second step an extensive literature search is conducted. The resulting data based on the literature search is then analysed and synthesized to answer the research questions by clustering 
+The systematic literature review conducted in this paper follows the guidelines outlined in~\cite{BRERETON2007571} and is also based on the methodology used in the systematic literature review by Leitner and Rinderle-Ma~\cite{Leitner2014273}.
+At first a clear definition of the research questions is given before in the second step an extensive literature search is conducted. The resulting data based on the literature search is then analysed and synthesized to answer the research questions by clustering
 the papers into different categories.\\
 \subsection{Research identification}\label{Identification}
 This paper aims to update the survey by Leitner and Rinderle-Ma~\cite{Leitner2014273} in the field of Process Mining and security in PAIS  and therefore to examine and evaluate the advances of security research using Process Mining in PAIS since 2012.
 To approach this goal we redefine the research questions formulated in Section~\ref{Introduction}:
 \begin{enumerate}
     \item What is the contribution of security research using Process Mining in PAIS\@?
-    \begin{enumerate}
-        \item What security goals are protected by the applications proposed by the reviewed papers?
-        \item What Process Mining applications and concepts are used for security in PAIS?
-    \end{enumerate}
+          \begin{enumerate}
+              \item What security goals are protected by the applications proposed by the reviewed papers?
+              \item What Process Mining applications and concepts are used for security in PAIS?
+          \end{enumerate}
     \item How where the research challenges defined in~\cite{Leitner2014273} been addressed by recent research?
 \end{enumerate}
 The first research question is investigates the contribution of recent research in the field of Process Mining for security in PAIS and is divided into two subquestions to give a more detailed and holistic insight into the research field.
@@ -206,17 +206,17 @@ and how they contributed to the solution of these challenges.
     \centering
     \begin{tabular}{ | m{1cm} | m{11cm} | }
         \hline
-        Inc 1 & Search string: „process mining“ | „data mining“) \& („security“ | „constraints“ | „access control“ | „authorization“) \& („process aware“ | „workflow“ | „business process“)\\
+        Inc 1 & Search string: („process mining“ | „data mining“) \& („security“ | „constraints“ | „access control“ | „authorization“) \& („process aware“ | „workflow“ | „business process“) \\
         \hline
-        Exc 1 & The paper was published before 2013 \\
+        Exc 1 & The paper was published before 2013                                                                                                                                           \\
         \hline
-        Exc 2 & The paper is not written in English \\
+        Exc 2 & The paper is not written in English                                                                                                                                           \\
         \hline
-        Exc 3 & Title, keywords and abstract do not indicate relevance for Security, Process Mining and PAIS \\
+        Exc 3 & Title, keywords and abstract do not indicate relevance for Security, Process Mining and PAIS                                                                                  \\
         \hline
-        Exc 4 & Content is not related to the usage of Process Mining to enhance security in PAIS \\
+        Exc 4 & Content is not related to the usage of Process Mining to enhance security in PAIS                                                                                             \\
         \hline
-        Inc 2 & Extend results by relevant papers from the references of the included papers \\
+        Inc 2 & Extend results by relevant papers from the references of the included papers                                                                                                  \\
         \hline
     \end{tabular}
     \caption{Inclusion and Exclusion Criteria for the Literature Search and Selection}
@@ -228,23 +228,34 @@ Table~\ref{criteria} was used with the exclusion criteria 1 and 2 applied. Those
 \subsection{Literature Selection}\label{Selection}
 \begin{table}[h!]
     \centering
-    \begin{tabular}{ |c|c|}
+    \begin{tabular}{ |c|c|c|}
         \hline
-        \textbf{Applied Criteria} & \textbf{Number of Papers}\\
+        \textbf{Step No.} & \textbf{Applied Criteria} & \textbf{Number of potentially rlevant Papers} \\
         \hline
         \hline
-        Inc 1, Exc 1 - 2 & 261\\
+        1             & Inc 1, Exc 1 - 2          & 261                       \\
         \hline
-        Exc 3 & 38\\
+        2             & Exc 3                     & 38                        \\
         \hline
-        Exc 4 & 15\\
+        3             & Exc 4                     & 15                        \\
         \hline
-        Inc 2 & 17\\
+        4             & Inc 2                     & 17                        \\
         \hline
     \end{tabular}
     \caption{Number of papers after each step of the Literature Selection}
     \label{selection}
 \end{table}
+The results of the literature search were then filtered to reduce the amount of papers to the relevant literature for the topic of this review. The publications were filtered according to the scheme in Table~\ref{selection} using the inclusion and exclusion criteria
+from Table~\ref{criteria}. The first step of the selection by excluding papers published before 2013 and publications not written in English was already executed during the literature search phase.
+In the second step of the literature review the title, keywords and abstract of the papers were reviewed to exclude papers that did not indicate to be relevant for all three topics of Process Mining, Security \textit{and} PAIS. Because security is a broad field not all 
+relevant papers used the term security in their title or keywords but instead used related terms like constraints, access control or authorization. This explains the inclusion of these terms in the search strings and why it was necessary to review the abstracts in
+the second step. Because the search string was designed to result in a broad range of papers about 230 irrelevant papers were excluded during step 2, resulting in 38 remaining papers.\\
+A detailed filtering by the content of the publications was done in the third step. If the content did not relate to the usage of Process Mining to enhance security in PAIS the paper was excluded. In this step the main challenge was to exclude papers that were
+related to Process Mining, security and PAIS but proposed methods that can make existing Process Mining applications more secure (e.g.\ by proposing secure transfer of event logs between organisations) but did not use Process Mining to enhance security in PAIS. After this step 15 papers
+remained for the data selection.\\
+In the last step the references of the included papers were reviewed to find further relevant papers that might have been missed in the initial search caused by the design of the search string or because they are not indexed in the databases used for the search.
+The papers that were referenced by already included papers were then reviewed if they met the exclusion criteria used for the results of the initial search. In this step two additional papers were found that were referenced in~\cite{Silalahi20221}, resulting in 17
+papers for the data extraction.
 \subsection{Data Extraction}\label{Extraction}
 
 \section{Results}\label{Results}
