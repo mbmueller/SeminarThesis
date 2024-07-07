@@ -10,6 +10,10 @@
 % Other font encondings may result in incorrect characters.
 %
 \usepackage{graphicx}
+\usepackage{enumitem}
+\setlist[enumerate]{label*=\arabic*.}
+\usepackage{adjustbox,lipsum}
+\usepackage{array}
 % Used for displaying a sample figure. If possible, figure files should
 % be included in EPS format.
 %
@@ -113,7 +117,7 @@ avoid further damages.
 normal operation of a system (e.g.\ concurrency over shared resources) are considered as authorized delays and therefore do not violate the property of availability.
 \paragraph{Accountability} The property of accountability (sometimes referred to as non-repudiation) is to ensure that an entity can not deny the actions it has taken. Accountability is
 important for Electronic Commerce to be able to prove in lawsuit that a contract has been signed by a certain entity or that a contract has been fulfilled.
-\paragraph{Privacy} The ability of individuals to control the collection, use and disclosure of their personal information and obliges organisations to protect the data of 
+\paragraph{Privacy} The ability of individuals to control the collection, use and disclosure of their personal information is called Privacy and obliges organisations to protect the data of 
 identified or identifiable individuals. Privacy is considered a human right~\cite{EU} and is therfore often regulated by laws like the General Data Protection Regulation (GDPR) in the European Union.
 \paragraph{Authenticity} Authenticity is the valiation of the identity of an acting entity using unique identifiers or characteristics, such as cryptographic keys or biometric data. 
 The act of verifying the identity of an entity is called authentication, that happens typically using user accounts with a distinct username and a secret password and/or biometric factors. 
@@ -178,6 +182,70 @@ This paper provides further contribution as it gives a more in depth analysis ov
 identifying the security goals that are protected. As this paper narrowing down the specific research field it takes a broader and more up-to-date time frame into consideration as~\cite{Silalahi20221} only reviewed
 papers between 2017 and 2021 and~\cite{Kelemen_2018} reviewed papers between 2000 and 2016.
 \section{Methodology}\label{Methodology}
+The systematic literature review conducted in this paper follows the guidelines outlined in~\cite{BRERETON2007571} and is also based on the methodology used in the systematic literature review by Leitner and Rinderle-Ma~\cite{Leitner2014273}. 
+At first a clear definition of the research questions is given before in the second step an extensive literature search is conducted. The resulting data based on the literature search is then analysed and synthesized to answer the research questions by clustering 
+the papers into different categories.\\
+\subsection{Research identification}\label{Identification}
+This paper aims to update the survey by Leitner and Rinderle-Ma~\cite{Leitner2014273} in the field of Process Mining and security in PAIS  and therefore to examine and evaluate the advances of security research using Process Mining in PAIS since 2012.
+To approach this goal we redefine the research questions formulated in Section~\ref{Introduction}:
+\begin{enumerate}
+    \item What is the contribution of security research using Process Mining in PAIS\@?
+    \begin{enumerate}
+        \item What security goals are protected by the applications proposed by the reviewed papers?
+        \item What Process Mining applications and concepts are used for security in PAIS?
+    \end{enumerate}
+    \item How where the research challenges defined in~\cite{Leitner2014273} been addressed by recent research?
+\end{enumerate}
+The first research question is investigates the contribution of recent research in the field of Process Mining for security in PAIS and is divided into two subquestions to give a more detailed and holistic insight into the research field.
+The subquestion 1.1 synthesizes the results into a classification of the security goals, as defined in Section~\ref{goals_def}, that are protected by the applications and methods proposed by the reviewed papers.
+The analysis of the Process Mining applications and concepts used for security in PAIS is done in subquestion 1.2.\\
+To analyze how the reviewed papers contributed and addressed the research challenges presented in~\cite{Leitner2014273} and summarized in Section~\ref{Challenges} in the second research question it is analysed what papers addressed these challenges
+and how they contributed to the solution of these challenges.
+\subsection{Literature Search}\label{Search}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{ | m{1cm} | m{11cm} | }
+        \hline
+        Inc 1 & Search string: „process mining“ | „data mining“) \& („security“ | „constraints“ | „access control“ | „authorization“) \& („process aware“ | „workflow“ | „business process“)\\
+        \hline
+        Exc 1 & The paper was published before 2013 \\
+        \hline
+        Exc 2 & The paper is not written in English \\
+        \hline
+        Exc 3 & Title, keywords and abstract do not indicate relevance for Security, Process Mining and PAIS \\
+        \hline
+        Exc 4 & Content is not related to the usage of Process Mining to enhance security in PAIS \\
+        \hline
+        Inc 2 & Extend results by relevant papers from the references of the included papers \\
+        \hline
+    \end{tabular}
+    \caption{Inclusion and Exclusion Criteria for the Literature Search and Selection}
+    \label{criteria}
+\end{table}
+To identitfy the relevant papers for the literature review a manual search was conducted using the IEEE Xplore and Scopus databases (retrieving date: June, 17th 2024). In the literature search the search string of inclusion criteria 1 from
+
+Table~\ref{criteria} was used with the exclusion criteria 1 and 2 applied. Those databases were chosen because they are known for their high quality of scientific papers and their relevance to the field of Computer Science. In total 261 papers were found in the search.
+\subsection{Literature Selection}\label{Selection}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{ |c|c|}
+        \hline
+        \textbf{Applied Criteria} & \textbf{Number of Papers}\\
+        \hline
+        \hline
+        Inc 1, Exc 1 - 2 & 261\\
+        \hline
+        Exc 3 & 38\\
+        \hline
+        Exc 4 & 15\\
+        \hline
+        Inc 2 & 17\\
+        \hline
+    \end{tabular}
+    \caption{Number of papers after each step of the Literature Selection}
+    \label{selection}
+\end{table}
+\subsection{Data Extraction}\label{Extraction}
 
 \section{Results}\label{Results}
 \subsection{How does Process Mining contribute to security in PAIS?}\label{Q1}
