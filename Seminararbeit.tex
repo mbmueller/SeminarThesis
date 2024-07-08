@@ -236,20 +236,20 @@ Table~\ref{criteria} was used with the exclusion criteria 1 and 2 applied. Those
         \textbf{Step No.} & \textbf{Applied Criteria} & \textbf{Number of potentially rlevant Papers} \\
         \hline
         \hline
-        1             & Inc 1, Exc 1 - 2          & 261                       \\
+        1                 & Inc 1, Exc 1 - 2          & 261                                           \\
         \hline
-        2             & Exc 3                     & 38                        \\
+        2                 & Exc 3                     & 38                                            \\
         \hline
-        3             & Exc 4                     & 15                        \\
+        3                 & Exc 4                     & 15                                            \\
         \hline
-        4             & Inc 2                     & 17                        \\
+        4                 & Inc 2                     & 17                                            \\
         \hline
     \end{tabular}
     \label{selection}
 \end{table}
 The results of the literature search were then filtered to reduce the amount of papers to the relevant literature for the topic of this review. The publications were filtered according to the scheme in Table~\ref{selection} using the inclusion and exclusion criteria
 from Table~\ref{criteria}. The first step of the selection by excluding papers published before 2013 and publications not written in English was already executed during the literature search phase.
-In the second step of the literature review the title, keywords and abstract of the papers were reviewed to exclude papers that did not indicate to be relevant for all three topics of Process Mining, Security \textit{and} PAIS. Because security is a broad field not all 
+In the second step of the literature review the title, keywords and abstract of the papers were reviewed to exclude papers that did not indicate to be relevant for all three topics of Process Mining, Security \textit{and} PAIS. Because security is a broad field not all
 relevant papers used the term security in their title or keywords but instead used related terms like constraints, access control or authorization. This explains the inclusion of these terms in the search strings and why it was necessary to review the abstracts in
 the second step. Because the search string was designed to result in a broad range of papers about 230 irrelevant papers were excluded during step 2, resulting in 38 remaining papers.\\
 A detailed filtering by the content of the publications was done in the third step. If the content did not relate to the usage of Process Mining to enhance security in PAIS the paper was excluded. In this step the main challenge was to exclude papers that were
@@ -259,7 +259,7 @@ In the last step the references of the included papers were reviewed to find fur
 The papers that were referenced by already included papers were then reviewed if they met the exclusion criteria used for the results of the initial search. In this step two additional papers were found that were referenced in~\cite{Silalahi20221}, resulting in 17
 papers for the data extraction.
 \subsection{Data Extraction}\label{Extraction}
-In the data extraxtion phase the relevant information from the publications was extracted in order to classify the publications into a meaningful and 
+In the data extraxtion phase the relevant information from the publications was extracted in order to classify the publications into a meaningful and
 solid strcuture allowing to answer the research questions identified in Section~\ref{Identification}. The two steps of the data extraction
 are illustrated in Figure~\ref{extract_scheme}.\\
 In the first step the main security concept covered by the publication was identitfied. The identification of the main security concept was based on
@@ -268,13 +268,13 @@ would indicate the publications main security concept in these sections to give 
 interest in the publication. For the analysis of the security concepts no automated extraction tools were used, instead the information was extracted manually.
 If title, abstract, keywords, introduction and conclusion indicated multiple security concepts or gave no indication of the main security concept the
 publication was inspected in more detail to identify the main security concept. During the categorization in security concepts it was always attempted
-to assign the publication to the most specific security concept possible. If this was not possible a broader security concept was chosen (e.g. 
+to assign the publication to the most specific security concept possible. If this was not possible a broader security concept was chosen (e.g.
 Anomaly Detection is a very broad concept that could also include intrusion detection as every intrusion is also an anomaly).\\
 In the second step the publications were classified into the security goals that are protected by the applications and methods proposed by the reviewed papers.
 A publication could be assigned to multiple security goals if the proposed method or application covered mutiple security goals. To classify the publications it was examined
 if the publication mentioned the security goals somewhere in the paper. As most of the papers did not explicitly mention the security goals, a manual classification was done by reviewing
 the purposes of the proposed methods and applications.\\
-In a last step it was analysed how the reviewed papers addressed the research challenges identified in~\cite{Leitner2014273}, for this purpose the content of the papers, especially the 
+In a last step it was analysed how the reviewed papers addressed the research challenges identified in~\cite{Leitner2014273}, for this purpose the content of the papers, especially the
 conclusion and discussion as well as the results sections, were reviewed and their contribution to one, or more, of the research challenges was investigated.
 \begin{figure}
     \includegraphics[width = \textwidth]{figures/extraction.jpg}
@@ -286,12 +286,34 @@ This section will outline the results of the systematic literature review. At fi
 contribution of Process Mining to security in PAIS based on the reviewed literature is analysed. Lastly it is discussed how the reviewed publications addressed the research challenges that
 were found in~\cite{Leitner2014273}.
 \subsection{Publication years and sources}\label{years}
+Figure~\ref{per_years} shows the amount of papers published per year between 2013 and 2024. As the figure shows, every year 0-1 papers were published with an exception in 2013, 2020 and 2022 with respectively 3 and 4 publications. It should be noted that the
+results were retrieved in June 2024 and therefore the results for 2024 may not be complete. Nonetheless the figure shows that there is no clear trend visible in the amount of publications per year. As all of the publications from 2013, 2020 and 2022 were
+published in different sources there is no explainable reason, like a special conference or journal, for the peaks in these years.\\
 \begin{figure}
     \centering
     \includegraphics{figures/years.tikz}
     \caption{Number of Publications per Year}
     \label{per_years}
 \end{figure}
+\begin{table}
+    \centering
+    \caption{Publisher of the reviewed publications}
+    \begin{tabular}{ | l | l | l | }
+        \hline
+        \textbf{Publisher}  & \textbf{Publications} & \textbf{Number of Publications} \\
+        \hline
+        \hline
+        IEEE Xplore         &                       &                               \\
+        \hline
+        Scopus              &                       &                                \\
+        \hline
+        Springer            & \cite{Breitmayer202411},                       &                                \\
+        \hline
+        ACM Digital Library &                       &                               \\
+        \hline
+    \end{tabular}
+    \label{sources}
+\end{table}
 \subsection{How does Process Mining contribute to security in PAIS?}\label{Q1}
 \subsubsection{Security goals}\label{goals}
 \paragraph{Confidentiality}
