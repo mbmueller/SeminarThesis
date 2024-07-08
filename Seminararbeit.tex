@@ -257,11 +257,22 @@ In the last step the references of the included papers were reviewed to find fur
 The papers that were referenced by already included papers were then reviewed if they met the exclusion criteria used for the results of the initial search. In this step two additional papers were found that were referenced in~\cite{Silalahi20221}, resulting in 17
 papers for the data extraction.
 \subsection{Data Extraction}\label{Extraction}
+In the data extraxtion phase the relevant information from the publications was extracted in order to classify the publications into a meaningful and 
+solid strcuture allowing to answer the research questions identified in Section~\ref{Identification}. The two steps of the data extraction
+are illustrated in Figure~\ref{extract_scheme}.
 \begin{figure}
     \includegraphics[width = \textwidth]{figures/extraction.jpg}
     \caption{Data Extraction Scheme}
     \label{extract_scheme}
 \end{figure}
+In the first step the main security concept covered by the publication was identitfied. The identification of the main security concept was based on
+title, abstract and keywords of the publication as well as the introduction and conclusion sections of the publication. It was assumed, that the authors
+would indicate the publications main security concept in these sections to give the reader a brief overview over the content of the paper and to gain their
+interest in the publication. For the analysis of the security concepts no automated extraction tools were used, instead the information was extracted manually.
+If title, abstract, keywords, introduction and conclusion indicated multiple security concepts or gave no indication of the main security concept the
+publication was inspected in more detail to identify the main security concept. During the categorization in security concepts it was always attempted
+to assign the publication to the most specific security concept possible. If this was not possible a broader security concept was chosen (e.g. 
+Anomaly Detection is a very broad concept that could also include intrusion detection as every intrusion is also an anomaly).\\
 
 \section{Results}\label{Results}
 This section will outline the results of the systematic literature review. At first, the publication years and publication sources of the selected publications is outlined. Secondly the
