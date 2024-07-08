@@ -14,6 +14,8 @@
 \setlist[enumerate]{label*=\arabic*.}
 \usepackage{adjustbox,lipsum}
 \usepackage{array}
+\usepackage{pgfplots}
+\usepackage{tikzscale}
 % Used for displaying a sample figure. If possible, figure files should
 % be included in EPS format.
 %
@@ -260,11 +262,6 @@ papers for the data extraction.
 In the data extraxtion phase the relevant information from the publications was extracted in order to classify the publications into a meaningful and 
 solid strcuture allowing to answer the research questions identified in Section~\ref{Identification}. The two steps of the data extraction
 are illustrated in Figure~\ref{extract_scheme}.\\
-\begin{figure}
-    \includegraphics[width = \textwidth]{figures/extraction.jpg}
-    \caption{Data Extraction Scheme}
-    \label{extract_scheme}
-\end{figure}
 In the first step the main security concept covered by the publication was identitfied. The identification of the main security concept was based on
 title, abstract and keywords of the publication as well as the introduction and conclusion sections of the publication. It was assumed, that the authors
 would indicate the publications main security concept in these sections to give the reader a brief overview over the content of the paper and to gain their
@@ -279,11 +276,22 @@ if the publication mentioned the security goals somewhere in the paper. As most 
 the purposes of the proposed methods and applications.\\
 In a last step it was analysed how the reviewed papers addressed the research challenges identified in~\cite{Leitner2014273}, for this purpose the content of the papers, especially the 
 conclusion and discussion as well as the results sections, were reviewed and their contribution to one, or more, of the research challenges was investigated.
+\begin{figure}
+    \includegraphics[width = \textwidth]{figures/extraction.jpg}
+    \caption{Data Extraction Scheme}
+    \label{extract_scheme}
+\end{figure}
 \section{Results}\label{Results}
 This section will outline the results of the systematic literature review. At first, the publication years and publication sources of the selected publications is outlined. Secondly the
 contribution of Process Mining to security in PAIS based on the reviewed literature is analysed. Lastly it is discussed how the reviewed publications addressed the research challenges that
 were found in~\cite{Leitner2014273}.
 \subsection{Publication years and sources}\label{years}
+\begin{figure}
+    \centering
+    \includegraphics{figures/years.tikz}
+    \caption{Number of Publications per Year}
+    \label{per_years}
+\end{figure}
 \subsection{How does Process Mining contribute to security in PAIS?}\label{Q1}
 \subsubsection{Security goals}\label{goals}
 \paragraph{Confidentiality}
