@@ -398,8 +398,10 @@ only~\cite{Zaman20192982},~\cite{MozafariMehr202182} and~\cite{Sarno2020} have o
 It should also be noted, that because of the generalistic approach of some publications it was not always possible to assign specific security goal. For instance~\cite{Fazzinga2020} proposed a framework to detect insecure process instances, involving different 
 kind of possible security breaches and therefore does not cover a specific security goal but offers a variety of application possibilities. 
 In total seven papers exist that no security goal was assigned to.
-\paragraph{Confidentiality}
-\paragraph{Integrity}
+\paragraph{Integrity} The most covered security goal is Integrity with 8 papers covering this goal. Main idea of the protection of Integrity that was used in all 8 papers is by detecting unauthorized changes of data using event logs. For example, the paper~\cite{Breitmayer202411}
+uses Process Mining to detect changes that were made with insufficient permissions, while~\cite{MacAk2020} tries to detect and prevent the changes of authorized employees who are abusing their permissions or are manipulated by a third party.
+\paragraph{Confidentiality} While Integrity protects data from undetected, unauthorized changes, Confidentiality protects data from being accessed by unauthorized entities. As most of the papers that covered Integrity detected unauthorized actions in the event logs
+the papers concept can also be applied to protect the Confidentiality of the system. Only~\cite{Sarno2020} and~\cite{Mardani2013} just covered to detect changes in data rather than unauthorized access in general they did not cover the security goal of Confidentiality.
 \paragraph{Availabilty} Mishra et al.~\cite{Mishra2018613} analysed methods to detect network intrusions in PAIS using Process Mining, as network intrusions can lead to a denial of service attack this paper contributes to the security goal Availabilty.
 \paragraph{Accountability} The paper~\cite{Mardani2013} tries to detect occupational fraud in business processes. In occupational fraud the employee tries to misuse of the employing organizations resources for his own enrichment. Falsifying documents,
 like records of working hours or transaction records, is one method of occupational fraud, the detection of such falsifications is a contribution to the security goal Accountability.
@@ -435,11 +437,13 @@ and Accorsi et al.~\cite{Accorsi20131462} used Process Mining to detect unauthor
         \hline
     \end{tabular}
 \end{table}
-\paragraph{Policy Enforcement}
+\paragraph{Policy Enforcement} The paper~\cite{Talamo2013} by Talamo et al.\ proposed a method to detect deviations from the intended process execution and especially from security policies at runtime. Because of the runtime detection of policy violations this
+method allows to alert the user or administrator of the system enabling them to react and enforce the security policies in real time.
 \paragraph{Security Auditing}
 \paragraph{Intrusion Detection}
 \paragraph{Fraud Detection}
-\paragraph{Insider Threat Detection}
+\paragraph{Insider Threat Detection} In Insider Threat Detection the focus is on the detection of malicious activities of employees or other authorised users. In~\cite{MacAk2020} the authors assume that employees have a regular routine in their work, that can be
+analysed using Process Mining, and that sudden changes in this routine may be an indicator for malicious activities.
 \paragraph{Anomaly Detection}
 \paragraph{RBAC Model Derivation}
 \paragraph{GDPR Compliance} It is no surprise that the papers~\cite{Zaman20192982} and~\cite{MozafariMehr202182} that covered the security goal Privacy also covered GDPR Compliance as the GDPR is one of the worlds most known privacy regulations.
