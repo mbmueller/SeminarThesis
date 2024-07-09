@@ -382,7 +382,7 @@ goal that lacks coverage totally.
         \hline
         Confidentiality        &\cite{Leitner2013719}, \cite{Accorsi20131462}, \cite{Mishra2018613}, \cite{MozafariMehr2022397}, \cite{Breitmayer202411}, \cite{MacAk2020}                                       & 6                            \\
         \hline
-        Authenticity           &\cite{Mardani2013}, \cite{Accorsi20131462}, \cite{Mishra2018613}, \cite{MozafariMehr2022397}                                                                                     & 3                            \\
+        Authenticity           &\cite{Mardani2013}, \cite{Accorsi20131462}, \cite{Mishra2018613}, \cite{MozafariMehr2022397}                                                                                     & 4                            \\
         \hline
         Privacy                &\cite{Zaman20192982}, \cite{MozafariMehr202182}                                                                                                                                  & 2                            \\
         \hline
@@ -396,14 +396,17 @@ goal that lacks coverage totally.
 As described in Section~\ref{Extraction} one paper could be assigned to more than one security goal, in fact if a security goal was assigned at all, 
 only~\cite{Zaman20192982},~\cite{MozafariMehr202182} and~\cite{Sarno2020} have only one protected security goal assigned.
 It should also be noted, that because of the generalistic approach of some publications it was not always possible to assign specific security goal. For instance~\cite{Fazzinga2020} proposed a framework to detect insecure process instances, involving different 
-kind of possible security breaches and therefore does not cover a specific security goal but a offers a variety of application possibilities. 
+kind of possible security breaches and therefore does not cover a specific security goal but offers a variety of application possibilities. 
 In total seven papers exist that no security goal was assigned to.
 \paragraph{Confidentiality}
 \paragraph{Integrity}
-\paragraph{Availabilty}
-\paragraph{Accountability}
-\paragraph{Privacy}
-\paragraph{Authenticity}
+\paragraph{Availabilty} Mishra et al.~\cite{Mishra2018613} analysed methods to detect network intrusions in PAIS using Process Mining, as network intrusions can lead to a denial of service attack this paper contributes to the security goal Availabilty.
+\paragraph{Accountability} The paper~\cite{Mardani2013} tries to detect occupational fraud in business processes. In occupational fraud the employee tries to misuse of the employing organizations resources for his own enrichment. Falsifying documents,
+like records of working hours or transaction records, is one method of occupational fraud, the detection of such falsifications is a contribution to the security goal Accountability.
+\paragraph{Privacy} The protection of privacy in~\cite{Zaman20192982} by assuring that an individuals Right to be Forgotten and detecting if personal data is not deleted as requested. The paper~\cite{MozafariMehr202182} focuses on the protection of privacy by
+detect deviations from privacy policies caused by erroneous behaviour of employees.
+\paragraph{Authenticity} To protect the security goal of Authenticity Leitner et al.~\cite{Leitner2013719} used Process Mining for the derivation of Role-Based Access Control (RBAC) models while Breitmayer et al.~\cite{Breitmayer202411}, Mishra et al.~\cite{Mishra2018613}
+and Accorsi et al.~\cite{Accorsi20131462} used Process Mining to detect unauthorized access to resources although all of these papers used different perspectives to protect the security goal of Authenticity, as they all focused on different security concepts.
 \subsubsection{Security concepts}\label{concepts}
 \begin{table}
     \centering
@@ -439,7 +442,7 @@ In total seven papers exist that no security goal was assigned to.
 \paragraph{Insider Threat Detection}
 \paragraph{Anomaly Detection}
 \paragraph{RBAC Model Derivation}
-\paragraph{GDPR Compliance}
+\paragraph{GDPR Compliance} It is no surprise that the papers~\cite{Zaman20192982} and~\cite{MozafariMehr202182} that covered the security goal Privacy also covered GDPR Compliance as the GDPR is one of the worlds most known privacy regulations.
 \subsection{Have the research challenges been addressed by recent research?}\label{Q2}
 \begin{table}
     \centering
