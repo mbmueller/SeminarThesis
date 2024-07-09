@@ -149,17 +149,7 @@ Role-Based Access Control (RBAC) models or data flow
 policies. It was concluded, that Process Mining can be used to capture relevant information on data, ressources and task execution to find or address security issues and compliance
 violations and their root causes.\\
 \subsubsection{Research Challenges identified}\label{Challenges}
-For security in PAIS in general (and not only regarding Process Mining) the authors identified the following research challenges:
-\begin{enumerate}
-    \item Agreement on Terminology and Controls
-    \item Consistency with Related Fields and Concepts
-    \item Measurement
-    \item Testing
-    \item Evaluation
-    \item Detection Controls
-    \item Reaction Controls
-    \item Human Orientation
-\end{enumerate}
+For security in PAIS in general (and not only regarding Process Mining) the authors identified the research challenges that are summarized in the following part. 
 \paragraph{Agreement on Terminology and Controls} The authors identified that the terminology used in the field of security in PAIS is not consistent and in some research no
 defintion of security or the protected security goals are provided.
 \paragraph{Consistency with Related Fields and Concepts} Even though research in security in PAIS is an interdisciplinary field, it was identified that except for the NIST standard for
@@ -323,7 +313,7 @@ publications each. The other publishers have only one publication each.
     \label{Publisher}
 \end{table}
 Table~\ref{sources} lists the different sources where the papers were published. The table lists both, Journals and Venues. Only 18 \% of the reviewed papers where published in journals, the
-other publications where published in conference, seminar or workshop proceedings.  
+other publications where published in conference, seminar or workshop proceedings.
 \begin{table}
     \centering
     \caption{Journals and Venues where the reviewed publications were published}
@@ -375,28 +365,28 @@ goal that lacks coverage totally.
     \caption{Security goals protected by the reviewed publications}
     \begin{tabular}{ | l | l | l | }
         \hline
-        \textbf{Security Goal} & \textbf{Publications}                                                                                                                                                            & \textbf{No. of Publications} \\
+        \textbf{Security Goal} & \textbf{Publications}                                                                                                                                                            & \textbf{No. } \\
         \hline
         \hline
-        Integrity              &\cite{Leitner2013719}, \cite{Mardani2013}, \cite{Accorsi20131462}, \cite{Mishra2018613}, \cite{MozafariMehr2022397}, \cite{Breitmayer202411}, \cite{Sarno2020}, \cite{MacAk2020} & 8                            \\
+        Integrity              & \cite{Leitner2013719}, \cite{Mardani2013}, \cite{Accorsi20131462}, \cite{Mishra2018613}, \cite{MozafariMehr2022397}, \cite{Breitmayer202411}, \cite{Sarno2020}, \cite{MacAk2020} & 8                            \\
         \hline
-        Confidentiality        &\cite{Leitner2013719}, \cite{Accorsi20131462}, \cite{Mishra2018613}, \cite{MozafariMehr2022397}, \cite{Breitmayer202411}, \cite{MacAk2020}                                       & 6                            \\
+        Confidentiality        & \cite{Leitner2013719}, \cite{Accorsi20131462}, \cite{Mishra2018613}, \cite{MozafariMehr2022397}, \cite{Breitmayer202411}, \cite{MacAk2020}                                       & 6                            \\
         \hline
-        Authenticity           &\cite{Mardani2013}, \cite{Accorsi20131462}, \cite{Mishra2018613}, \cite{MozafariMehr2022397}                                                                                     & 4                            \\
+        Authenticity           & \cite{Mardani2013}, \cite{Accorsi20131462}, \cite{Mishra2018613}, \cite{MozafariMehr2022397}                                                                                     & 4                            \\
         \hline
-        Privacy                &\cite{Zaman20192982}, \cite{MozafariMehr202182}                                                                                                                                  & 2                            \\
+        Privacy                & \cite{Zaman20192982}, \cite{MozafariMehr202182}                                                                                                                                  & 2                            \\
         \hline
-        Availabilty            &\cite{Mishra2018613}                                                                                                                                                             & 1                            \\
+        Availabilty            & \cite{Mishra2018613}                                                                                                                                                             & 1                            \\
         \hline
-        Accountability         &\cite{Mardani2013}                                                                                                                                                               & 1                            \\
+        Accountability         & \cite{Mardani2013}                                                                                                                                                               & 1                            \\
         \hline
     \end{tabular}
     \label{goals_table}
 \end{table}
-As described in Section~\ref{Extraction} one paper could be assigned to more than one security goal, in fact if a security goal was assigned at all, 
+As described in Section~\ref{Extraction} one paper could be assigned to more than one security goal, in fact if a security goal was assigned at all,
 only~\cite{Zaman20192982},~\cite{MozafariMehr202182} and~\cite{Sarno2020} have only one protected security goal assigned.
-It should also be noted, that because of the generalistic approach of some publications it was not always possible to assign specific security goal. For instance~\cite{Fazzinga2020} proposed a framework to detect insecure process instances, involving different 
-kind of possible security breaches and therefore does not cover a specific security goal but offers a variety of application possibilities. 
+It should also be noted, that because of the generalistic approach of some publications it was not always possible to assign specific security goal. For instance~\cite{Fazzinga2020} proposed a framework to detect insecure process instances, involving different
+kind of possible security breaches and therefore does not cover a specific security goal but offers a variety of application possibilities.
 In total seven papers exist that no security goal was assigned to.
 \paragraph{Integrity} The most covered security goal is Integrity with 8 papers covering this goal. Main idea of the protection of Integrity that was used in all 8 papers is by detecting unauthorized changes of data using event logs. For example, the paper~\cite{Breitmayer202411}
 uses Process Mining to detect changes that were made with insufficient permissions, while~\cite{MacAk2020} tries to detect and prevent the changes of authorized employees who are abusing their permissions or are manipulated by a third party.
@@ -416,7 +406,7 @@ and Accorsi et al.~\cite{Accorsi20131462} used Process Mining to detect unauthor
     \label{concepts_table}
     \begin{tabular}{ | l | l | l | }
         \hline
-        \textbf{Security Concept} & \textbf{Publications}                                                                           & \textbf{No. of Publications} \\
+        \textbf{Security Concept} & \textbf{Publications}                                                                           & \textbf{No. } \\
         \hline
         \hline
         Anomaly Detection         & \cite{Fazzinga2020}, \cite{MozafariMehr2022397}, \cite{Breitmayer202411}, \cite{Sarno2020}      & 4                            \\
@@ -437,15 +427,18 @@ and Accorsi et al.~\cite{Accorsi20131462} used Process Mining to detect unauthor
         \hline
     \end{tabular}
 \end{table}
+\paragraph{Anomaly Detection} The security concept of Anomaly Detection is a very broad concept that could subsume Intrusion Detection, Fraud Detection and Insider Threat Detection as well. Therefore papers that could not be assigned to a more specific security concept
+are listed under Anomaly Detection. Breitmayer et al.~\cite{Breitmayer202411} detects the missmatch between a required permission for a task and the permission an entity actually executing it had. The other papers in this category (\cite{Fazzinga2020},~\cite{MozafariMehr2022397},~\cite{Sarno2020})
+use Process Mining to detect deviations from the process model in the event logs.
 \paragraph{Policy Enforcement} The paper~\cite{Talamo2013} by Talamo et al.\ proposed a method to detect deviations from the intended process execution and especially from security policies at runtime. Because of the runtime detection of policy violations this
 method allows to alert the user or administrator of the system enabling them to react and enforce the security policies in real time.
-\paragraph{Security Auditing}
+\paragraph{Security Auditing} Under the concept of Security Auditing applications to evaluate the security properties of a system are summarized. Accorsi et al.~\cite{Accorsi20131462} use Process Mining to discover processes and to extract strcutures from log files
+on which they can test security requirements. There are papers (\cite{Yunizal20221387},~\cite{Dedousis202235}) that use Process Mining to asses the risk (therefore possibility and potential damage) of possible security incidents.
 \paragraph{Intrusion Detection}
 \paragraph{Fraud Detection}
 \paragraph{Insider Threat Detection} In Insider Threat Detection the focus is on the detection of malicious activities of employees or other authorised users. In~\cite{MacAk2020} the authors assume that employees have a regular routine in their work, that can be
 analysed using Process Mining, and that sudden changes in this routine may be an indicator for malicious activities.
-\paragraph{Anomaly Detection}
-\paragraph{RBAC Model Derivation}
+\paragraph{RBAC Model Derivation} The paper~\cite{Leitner2013719} by Leitner et al.\ derives RBAC models from event logs by analysing different users and their performed actions to then derive roles and permissions from these actions.
 \paragraph{GDPR Compliance} It is no surprise that the papers~\cite{Zaman20192982} and~\cite{MozafariMehr202182} that covered the security goal Privacy also covered GDPR Compliance as the GDPR is one of the worlds most known privacy regulations.
 \subsection{Have the research challenges been addressed by recent research?}\label{Q2}
 \begin{table}
@@ -454,19 +447,19 @@ analysed using Process Mining, and that sudden changes in this routine may be an
     \label{challenges_table}
     \begin{tabular}{ | l | l | l | }
         \hline
-        \textbf{Research Challenge} & \textbf{Publications}                                                                                                                                                            & \textbf{No. of Publications} \\
+        \textbf{Research Challenge}                  & \textbf{Publications}                                                                         & \textbf{No. } \\
         \hline
         \hline
         Consistency with Related Fields and Concepts & \cite{Zaman20192982}, \cite{Accorsi20131462}, \cite{Zahoransky2014360}, \cite{Dedousis202235} & 4                            \\
         \hline
-        Measurement & \cite{Dedousis202235} & 1 \\
+        Measurement                                  & \cite{Dedousis202235}                                                                         & 1                            \\
         \hline
-        Evaluation & \cite{Zahoransky2014360} & 1 \\
+        Evaluation                                   & \cite{Zahoransky2014360}                                                                      & 1                            \\
 
         \hline
-        Detection Controls & \cite{Mishra2018613} & 1 \\
+        Detection Controls                           & \cite{Mishra2018613}                                                                          & 1                            \\
         \hline
-        Human Orientation & \cite{Mardani2013}, \cite{Zhu201783} & 2 \\
+        Human Orientation                            & \cite{Mardani2013}, \cite{Zhu201783}                                                          & 2                            \\
         \hline
     \end{tabular}
 \end{table}
