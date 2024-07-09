@@ -295,6 +295,8 @@ published in different sources there is no explainable reason, like a special co
     \caption{Number of Publications per Year}
     \label{per_years}
 \end{figure}
+In Table~\ref{Publisher} the publishers of the reviewed publications are listed. It can be seen that the majority of the publications were published by IEEE and Springer with 35\% of the
+publications each. The other publishers have only one publication each.
 \begin{table}
     \centering
     \caption{Publisher of the reviewed publications}
@@ -320,6 +322,8 @@ published in different sources there is no explainable reason, like a special co
     \end{tabular}
     \label{Publisher}
 \end{table}
+Table~\ref{sources} lists the different sources where the papers were published. The table lists both, Journals and Venues. Only 18 \% of the reviewed papers where published in journals, the
+other publications where published in conference, seminar or workshop proceedings.  
 \begin{table}
     \centering
     \caption{Journals and Venues where the reviewed publications were published}
@@ -360,7 +364,12 @@ published in different sources there is no explainable reason, like a special co
     \end{tabular}
 \end{table}
 \subsection{How does Process Mining contribute to security in PAIS?}\label{Q1}
+Now the concrete contributions of the reviewed papers to the field of PAIS security using Process Mining will be examined and therefore the first research question will be evaluated. In the following
+the papers will be clustered by the security goals that are protected by their proposed applications or methods and in the second part of this section the secruity concepts of the papers are reviewed.
 \subsubsection{Security goals}\label{goals}
+The different security goals were definded in Section~\ref{goals_def} and their coverage by the reviewed papers is shown in Table~\ref{goals_table}. In this table one can see that the security goals
+that were covered most frequently are Integrity and Confidentiality with 8 and 6 papers respectively. As all other security goals are protected in 1 - 3 papers there is no security
+goal that lacks coverage totally.
 \begin{table}
     \centering
     \caption{Security goals protected by the reviewed publications}
@@ -369,21 +378,25 @@ published in different sources there is no explainable reason, like a special co
         \textbf{Security Goal} & \textbf{Publications}                                                                                                                                                            & \textbf{No. of Publications} \\
         \hline
         \hline
-        Confidentiality        & \cite{Leitner2013719}, \cite{Accorsi20131462}, \cite{Mishra2018613}, \cite{MozafariMehr2022397}, \cite{Breitmayer202411}, \cite{MacAk2020}                                       & 6                            \\
+        Integrity              &\cite{Leitner2013719}, \cite{Mardani2013}, \cite{Accorsi20131462}, \cite{Mishra2018613}, \cite{MozafariMehr2022397}, \cite{Breitmayer202411}, \cite{Sarno2020}, \cite{MacAk2020} & 8                            \\
         \hline
-        Integrity              & \cite{Leitner2013719}, \cite{Mardani2013}, \cite{Accorsi20131462}, \cite{Mishra2018613}, \cite{MozafariMehr2022397}, \cite{Breitmayer202411}, \cite{Sarno2020}, \cite{MacAk2020} & 8                            \\
+        Confidentiality        &\cite{Leitner2013719}, \cite{Accorsi20131462}, \cite{Mishra2018613}, \cite{MozafariMehr2022397}, \cite{Breitmayer202411}, \cite{MacAk2020}                                       & 6                            \\
         \hline
-        Authenticity           & \cite{Mardani2013}, \cite{Accorsi20131462}, \cite{Mishra2018613}, \cite{MozafariMehr2022397}                                                                                     & 3                            \\
+        Authenticity           &\cite{Mardani2013}, \cite{Accorsi20131462}, \cite{Mishra2018613}, \cite{MozafariMehr2022397}                                                                                     & 3                            \\
         \hline
-        Privacy                & \cite{Zaman20192982}, \cite{MozafariMehr202182}                                                                                                                                  & 2                            \\
+        Privacy                &\cite{Zaman20192982}, \cite{MozafariMehr202182}                                                                                                                                  & 2                            \\
         \hline
-        Availabilty            & \cite{Mishra2018613}                                                                                                                                                             & 1                            \\
+        Availabilty            &\cite{Mishra2018613}                                                                                                                                                             & 1                            \\
         \hline
-        Accountability         & \cite{Mardani2013}                                                                                                                                                               & 1                            \\
+        Accountability         &\cite{Mardani2013}                                                                                                                                                               & 1                            \\
         \hline
     \end{tabular}
     \label{goals_table}
 \end{table}
+As described in Section~\ref{Extraction} one paper could be assigned to more than one security goal, in fact if a security goal was assigned at all, 
+only~\cite{Zaman20192982},~\cite{MozafariMehr202182} and~\cite{Sarno2020} have only one protected security goal assigned.
+It should also be noted, that because of the generalistic approach of some publications it was not always possible to assign specific security goal. For instance~\cite{Fazzinga2020} TODO. 
+In total seven papers exist that no security goal was assigned to.
 \paragraph{Confidentiality}
 \paragraph{Integrity}
 \paragraph{Availabilty}
