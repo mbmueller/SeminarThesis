@@ -435,7 +435,8 @@ method allows to alert the user or administrator of the system enabling them to 
 \paragraph{Security Auditing} Under the concept of Security Auditing applications to evaluate the security properties of a system are summarized. Accorsi et al.~\cite{Accorsi20131462} use Process Mining to discover processes and to extract strcutures from log files
 on which they can test security requirements. There are papers (\cite{Yunizal20221387},~\cite{Dedousis202235}) that use Process Mining to asses the risk (therefore possibility and potential damage) of possible security incidents.
 \paragraph{Intrusion Detection} To detect intrusions in PAIS Mishra et al.~\cite{Mishra2018613} use event logs to detect anomalies at run time that could indicate an intrusion of the system by monitoring the network traffic.
-\paragraph{Fraud Detection} The method to detect fraud proposed by Mardani et al.~\cite{Mardani2013} is based on statistical evaluations. Process models derived from event logs were used for the evaluation and afterwards outliers in the data are detected.
+\paragraph{Fraud Detection} The method to detect fraud proposed by Mardani et al.~\cite{Mardani2013} is based on statistical evaluations. Process models derived from event logs were used for the evaluation and afterwards outliers in the data are detected. Their method
+is based on ex-post detection, because they assume that keeping flexibility at run time and beeing able to react to the fraud afterwards is more efficient than try to prevent fraud at the expense of flexibility.
 \paragraph{Insider Threat Detection} In Insider Threat Detection the focus is on the detection of malicious activities of employees or other authorised users. In~\cite{MacAk2020} the authors assume that employees have a regular routine in their work, that can be
 analysed using Process Mining, and that sudden changes in this routine may be an indicator for malicious activities.
 \paragraph{RBAC Model Derivation} The paper~\cite{Leitner2013719} by Leitner et al.\ derives RBAC models from event logs by analysing different users and their performed actions to then derive roles and permissions from these actions.
@@ -468,6 +469,8 @@ Consistency with Related Fields and Concepts was addressed most frequently by 4 
 use state of the art Process Mining techniques for Security Auditing in PAIS.\\
 In~\cite{Dedousis202235} a method to asses the security risk of a PAIS is proposed. Metrics were introduced to measure the security risk of a PAIS using numeric values, this paper therefore addresses the Measurement challenge. In contrast~\cite{Zahoransky2014360}
 evaluates the resilience of a PAIS during design time and is therefore addressing the Evaluation challenge.\\
+Leitner et al.~\cite{Leitner2014273} identified that in their literature review the research lacked detection controls at run time. Mishra et al-~\cite{Mishra2018613} used Process Mining to monitor network and system activities at run time to detect intrusions.
+This approach is a contribution to the Detection Controls challenge.\\
 
 
 \section{Discussion and Conclusion}\label{Conclusion}
